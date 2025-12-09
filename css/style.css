@@ -234,6 +234,12 @@ a.nav-link.selected{
 }
 
 
+/*immagini progetti*/
+.img-com{
+    height: fit-content;
+}
+
+
 /*media query*/
 @media (max-width: 992px) {
     .font-size-1{font-size: 14px;}
