@@ -240,6 +240,41 @@ a.nav-link.selected{
 }
 
 
+
+
+/*footer*/
+ul.f-nav-list{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li.f-nav-item{
+    margin: 0;
+    padding: 0;
+}
+
+a.f-nav-link{
+    color: #4B0082;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 8px;
+    padding: 8px;
+}
+
+a.f-nav-link:hover{
+    color: #4B0082;
+    border-bottom: solid 3px #4B0082 ;
+}
+
+a.f-nav-link.selected{
+    color: #F2F2F7;
+    border-bottom: solid 2px #F2F2F7;
+}
+
+
 /*media query*/
 @media (max-width: 992px) {
     .font-size-1{font-size: 14px;}
