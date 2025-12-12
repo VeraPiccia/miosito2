@@ -19,13 +19,13 @@
         <div class="d-none d-lg-flex col-lg-9 justify-content-end align-items-center">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="font-size-2 nav-link selected"><strong>CHI SONO</strong></a>
+              <a href="#chi-sono" class="font-size-2 nav-link"><strong>CHI SONO</strong></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="font-size-2 nav-link"><strong>PROGETTI</strong></a>
+              <a href="#progetti" class="font-size-2 nav-link"><strong>PROGETTI</strong></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="font-size-2 nav-link"><strong>CONTATTI</strong></a>
+              <a href="#contatti" class="font-size-2 nav-link"><strong>CONTATTI</strong></a>
             </li>
           </ul>
         </div>
@@ -38,13 +38,13 @@
         <button class="btn-close mb-3">Close</button>
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link selected font-size-2"><strong>CHI SONO</strong></a>
+            <a href="#chi-sono" class="nav-link selected font-size-2"><strong>CHI SONO</strong></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link font-size-2"><strong>PROGETTI</strong></a>
+            <a href="#progetti" class="nav-link font-size-2"><strong>PROGETTI</strong></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link font-size-2"><strong>CONTATTI</strong></a>
+            <a href="#contatti" class="nav-link font-size-2"><strong>CONTATTI</strong></a>
           </li>
         </ul>
       </div>
@@ -63,7 +63,7 @@
 
       <!-- terza riga layout-->
 
-       <div class="bg-lilla box-3">
+       <div id="chi-sono" class="bg-lilla box-3">
          <div class="container">
           <div class="row align-items-center">
            <div class="col-12 col-md-7 offset-md-1">
@@ -134,7 +134,7 @@
       </div>
 
       <!-- sesta riga layout -->
-       <div class="bg-lilla box-6">
+       <div class="bg-lilla box-6" id="progetti">
          <div class="container">
           <div class="row align-items-center">
            <div class="col-12 col-md-7 offset-md-1">
@@ -142,7 +142,7 @@
              <p class="font-size-1 box-testo">
               Ho scoperto la mia passione per il design grazie all’incontro con una professoressa che mi ha incoraggiata a intraprendere gli studi presso l’Università di San Marino. All’inizio il percorso universitario mi ha visto affrontare alcune incertezze, ma con il tempo ho compreso quanto desidero approfondire le mie conoscenze e sviluppare le mie capacità creative, esplorando nuove metodologie, strumenti e linguaggi del design per trasformare le idee in progetti concreti e significativi.
              </p>
-             <h3 class="font-size-1 color-grigio mt-5 sotto-scritta">DA COSA PRENDO ISPIRAZIONE ↓</h3>
+             <h3 class="font-size-1 color-grigio mt-5 sotto-scritta">I MIEI PROGETTI ↓</h3>
           </div>
          </div>
         </div>
@@ -266,14 +266,14 @@
      </div>
 
   <!--footer / contatti-->
-<footer class="footer bg-lilla py-4">
+<footer class="footer bg-lilla py-4" id="contatti">
   <div class="container text-center">
 
     <!-- RIGA 1: voci principali -->
     <div class="footer-nav mb-3">
-      <a href="#" class="font-size-2 footer-nav-link">CHI SONO</a>
+      <a href="#chi-sono" class="font-size-2 footer-nav-link">CHI SONO</a>
       <span class="font-size-2 footer-nav-text">CONTATTI</span>
-      <a href="#" class="font-size-2 footer-nav-link selected">PROGETTI</a>
+      <a href="#progetti" class="font-size-2 footer-nav-link selected">PROGETTI</a>
     </div>
 
     <!-- RIGA 2: dettagli contatti -->
@@ -397,6 +397,15 @@
   });
 
   window.addEventListener('resize', updateCarouselUnc);
+
+// CHIUSURA MENU MOBILE QUANDO SI CLICCA UN LINK
+const mobileLinks = document.querySelectorAll('.mobile-nav-wrapper a');
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNavWrapper.classList.remove('show');
+  });
+});
 
 
 </script>
