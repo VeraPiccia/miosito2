@@ -21,6 +21,10 @@ html, body{
      line-height: 84px;
 }
 
+.font-size-4{
+     font-size: 3vw;
+}
+
 
 .testo-normale{
     font-weight: normal;
@@ -252,35 +256,12 @@ a.nav-link.selected{
 
 /*immagini ispirazioni*/
 .img-isp {
-  border: 4px solid #4B0082;
+  border: 2px solid #4B0082;
   border-radius: 10px;             
 }
 .img-isp:hover {
   box-shadow: 0 0 20px rgba(75, 0, 130, 0.5);
 }
-
-/*immagini progetti*/
-.img-com {
-  border: 4px solid #4B0082;
-  border-radius: 10px;             
-}
-
-/*immagini fasce*/
-.img-fasce {
-  border: 4px solid #B19CD9;
-  border-radius: 10px;             
-}
-
-
-/*immagini */
-.img-sup {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 2px solid #4B0082;
-  border-radius: 6px;
-}
-
 
 
 
@@ -331,9 +312,9 @@ a.f-nav-link.selected{
   transition: transform 0.4s ease-in-out;
 }
 
-.carousel-img {
+.carousel-img-sup {
   min-width: 100%;
-  border: 4px solid #B19CD9;
+  border: 2px solid #B19CD9;
   border-radius: 10px;
 }
 
@@ -378,7 +359,7 @@ a.f-nav-link.selected{
   width: 100%;
   height: auto;
   object-fit: contain;
-  border: 4px solid #B19CD9;
+  border: 2px solid #4B0082;
   border-radius: 10px;
 }
 
@@ -420,7 +401,7 @@ a.f-nav-link.selected{
 
 .carousel-unc-img {
   min-width: 100%;
-  border: 4px solid #B19CD9;
+  border: 2px solid #B19CD9;
   border-radius: 10px;
 }
 
@@ -449,27 +430,21 @@ a.f-nav-link.selected{
 
 /* ===== FOOTER ===== */
 .footer {
-  padding: 30px 15px;
   background-color: #B19CD9; /* lilla */
   color: white;
 }
 
-/* Titolo CONTATTI */
-/* Wrapper nav footer: centrato e distanziato */
-.footer-nav-wrapper {
+.footer-nav {
   display: flex;
-  justify-content: center;   /* centrato orizzontalmente */
-  gap: 60px;                 /* distanza tra i link, puoi aumentare o diminuire */
-  margin-bottom: 15px;       
+  justify-content: center;
+  gap: 80px; /* distanza tra le voci */
+  font-size: 20px;
+  font-weight: 600;
 }
 
-/* Mantieni lo stile dei link */
 .footer-nav-link {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  padding-bottom: 2px;
   transition: 0.2s;
 }
 
@@ -478,43 +453,30 @@ a.f-nav-link.selected{
   border-bottom: 2px solid white;
 }
 
-.footer-nav-link.selected {
-  color: #4B0082;
-  border-bottom: 2px solid #4B0082;
+.footer-nav-text {
+  color: white;
+  font-weight: 600;
+  cursor: default;
 }
 
-/* CONTATTI */
+.footer-contacts {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer-contacts p {
+  margin: 4px 0;
+}
+
 .footer-contacts a {
   color: white;
   text-decoration: none;
-  display: block;
-  margin-bottom: 4px;
   transition: 0.2s;
 }
 
 .footer-contacts a:hover {
-  text-decoration: underline;
-  color: white;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .footer .row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .footer-contacts {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .footer-nav-link {
-    display: inline-block;
-    margin: 0 10px;
-  }
+  color: #4B0082; /* viola al passaggio */
 }
 
 
@@ -559,24 +521,5 @@ a.f-nav-link.selected{
 
   .footer-nav {
     margin-top: 15px;
-  }
-}
-/* Footer */
-@media (max-width: 992px) {
-  .footer .row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .footer-contacts {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .footer-nav-link {
-    display: inline-block;
-    margin: 0 10px;
   }
 }
