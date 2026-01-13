@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15.91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: indigo;
+        font-family: ArchivoRoman-ExtraBold, Archivo;
+        font-size: 10px;
+        font-variation-settings: 'wght' 800, 'wdth' 100;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(.87 11.57)"><tspan x="0" y="0">V</tspan><tspan class="cls-2" x="7.29" y="0">P</tspan></text>
+</svg>
